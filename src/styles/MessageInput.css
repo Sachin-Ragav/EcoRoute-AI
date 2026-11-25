@@ -1,0 +1,61 @@
+.composer-wrap { display: flex; flex-direction: column; gap: 6px; }
+.attachment-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.attachment-chip { display: flex; align-items: center; gap: 7px; min-width: 190px; max-width: 310px; padding: 6px 8px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg-raised); color: var(--text-dim); }
+.attachment-chip.is-error { border-color: rgba(248,113,113,.5); color: var(--danger); }
+.attachment-chip img { width: 30px; height: 30px; object-fit: cover; border-radius: 4px; }
+.attachment-chip-info { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.attachment-chip-info strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text); font-size: 11px; }
+.attachment-chip-info small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 10px; }
+.attachment-note { color: #f59e0b; }
+.attachment-chip button { display: flex; padding: 2px; border: 0; background: none; color: var(--text-dim); cursor: pointer; }
+.integrity-button { padding: 3px 5px !important; width: auto !important; height: auto !important; border: 1px solid var(--border) !important; border-radius: 4px !important; background: var(--bg-sunken) !important; color: var(--text-dim) !important; font-size: 9px; }
+.integrity-button:hover { color: var(--accent) !important; }
+.attachment-error { margin: 0; color: var(--danger); font-size: 11px; }
+.attachment-consent { display: flex; align-items: center; gap: 6px; color: var(--text-dim); font-size: 10.5px; }
+.message-input {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-raised);
+}
+.attach-button { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; flex-shrink: 0; border: 0; border-radius: var(--radius-sm); background: var(--bg-sunken); color: var(--text-dim); cursor: pointer; }
+.attach-button:hover { color: var(--accent); }
+.attach-button:disabled { opacity: .6; cursor: default; }
+.message-input textarea {
+  flex: 1;
+  resize: none;
+  border: none;
+  background: none;
+  color: var(--text-bright);
+  font: inherit;
+  max-height: 160px;
+  padding: 6px 4px;
+}
+.message-input textarea:focus {
+  outline: none;
+}
+.message-input textarea::placeholder {
+  color: var(--text-dim);
+}
+
+.message-input button {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--accent);
+  color: #06281c;
+  cursor: pointer;
+}
+.message-input button:disabled {
+  background: var(--border);
+  color: var(--text-dim);
+  cursor: default;
+}

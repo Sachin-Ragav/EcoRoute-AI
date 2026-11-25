@@ -1,0 +1,21 @@
+{
+  "profiles": [
+    {
+      "id": "p_1795530261762_60x5mp",
+      "name": "qwev",
+      "provider": "custom-openai-compatible",
+      "baseUrl": "http://127.0.0.1:8888",
+      "apiKey": "sk-unsloth-6ea45d3bf8fe296dd52edc90aa0ef13a",
+      "modelId": "unsloth/Qwen3-VL-4B-Instruct-GGUF",
+      "enabled": true,
+      "isDefault": true,
+      "capabilities": [
+        "fast",
+        "general",
+        "coding",
+        "reasoning",
+        "summarization"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+.privacy-shield {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.privacy-shield.is-inactive {
+  background: var(--bg-sunken);
+  border-color: var(--border);
+  color: var(--text-dim);
+}
